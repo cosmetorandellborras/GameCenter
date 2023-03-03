@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_mode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryVariant">
+
+
+    <TextView
+        android:id="@+id/select_mode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT MODE"
+        android:fontFamily="@font/solid_wood"
+        android:shadowColor="@color/menu_shadow"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:textSize="56dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:paddingTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/preview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/image_game_3x3"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layour_arrows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/left_arrow"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/text_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3x3"
+            android:fontFamily="@font/solid_wood"
+            android:shadowColor="@color/menu_shadow"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="5"
+            android:textSize="36dp"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/right_arrow"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+</LinearLayout>
